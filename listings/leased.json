@@ -1,0 +1,9 @@
+[
+  { "city": "Palo Alto",  "zip": "94306", "type": "",              "days_to_lease": 3,  "photo": "assets/img/leased/07.jpg" },
+  { "city": "San Jose",   "zip": "95131", "type": "",              "days_to_lease": 5,  "photo": "assets/img/leased/05.jpg" },
+  { "city": "Dublin",     "zip": "94568", "type": "Single Family", "days_to_lease": 7,  "photo": "assets/img/leased/03.jpg" },
+  { "city": "San Jose",   "zip": "95131", "type": "Condo",         "days_to_lease": 8,  "photo": "assets/img/leased/01.jpg" },
+  { "city": "San Jose",   "zip": "95132", "type": "Single Family", "days_to_lease": 8,  "photo": "assets/img/leased/04.jpg" },
+  { "city": "San Jose",   "zip": "95120", "type": "",              "days_to_lease": 9,  "photo": "assets/img/leased/06.jpg" },
+  { "city": "Los Gatos",  "zip": "95033", "type": "Single Family", "days_to_lease": 10, "photo": "assets/img/leased/02.jpg" }
+]

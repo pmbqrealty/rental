@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Owner Requests · Bill Qin PM Team · BQ Realty</title>
+<meta name="description" content="For homeowners managed by the Bill Qin PM Team at BQ Realty: report unpaid rent, approve a repair quote, share an HOA notice and more.">
+<meta name="theme-color" content="#1B1A17">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231C1C1C'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='%23D4BC8E' text-anchor='middle' letter-spacing='2'%3EBQ%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="header header--static" id="header">
+  <div class="wrap header__inner">
+    <a href="index.html" class="brand" aria-label="BQ Realty home">
+      <span class="brand__name">BQ REALTY</span>
+      <span class="brand__sub">Bill Qin PM Team</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="tenants.html" data-i18n="nav.tenants">Tenants</a>
+      <a href="owners.html" class="is-active" data-i18n="nav.owners">Owners</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" class="is-on"><span>EN</span></button>
+      <button type="button" data-lang="zh"><span>中文</span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html" data-i18n="cr.home">Home</a><span>/</span><span data-i18n="nav.owners">Owners</span></div>
+    <p class="eyebrow" data-i18n="ow.eyebrow">Owner Center</p>
+    <h1 data-i18n-html="ow.title">Owner <em>requests</em></h1>
+    <p class="lead" data-i18n="ow.lead">For homeowners we currently manage. Tell us what you need — rent, repairs, HOA notices or lease plans — and we'll take it from there.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:clamp(56px,7vw,96px)">
+  <div class="wrap">
+    <form class="form form--owner" data-form="owner" novalidate>
+      <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <!-- STEP 1 -->
+      <div class="step-head"><b>1</b><div><h2 data-i18n="ow.s1">What do you need?</h2><p data-i18n="ow.s1p">Choose the one that fits best.</p></div></div>
+      <div class="types" role="radiogroup">
+        <label class="type"><input type="radio" name="request_type" value="Rent not received" required>
+          <span class="type__box"><svg viewBox="0 0 32 32"><rect x="4" y="8" width="24" height="16" rx="1"/><circle cx="16" cy="16" r="3.5"/><path d="M8 12v8M24 12v8"/></svg>
+          <strong data-i18n="ow.r1">Rent not received</strong><small data-i18n="ow.r1d">This month's rent hasn't arrived</small></span></label>
+        <label class="type"><input type="radio" name="request_type" value="Repair quote approval">
+          <span class="type__box"><svg viewBox="0 0 32 32"><path d="M9 4h10l6 6v18H9z"/><path d="M19 4v6h6M13 19l3 3 6-7"/></svg>
+          <strong data-i18n="ow.r2">Approve a repair quote</strong><small data-i18n="ow.r2d">Reply to a quote we sent you</small></span></label>
+        <label class="type"><input type="radio" name="request_type" value="Property issue">
+          <span class="type__box"><svg viewBox="0 0 32 32"><path d="M20 6a6 6 0 00-7.6 7.6L5 21l3 3 7.4-7.4A6 6 0 0026 12l-3.5 3.5-3-.9-.9-3L22 8a6 6 0 00-2-2z"/></svg>
+          <strong data-i18n="ow.r7">Report a property issue</strong><small data-i18n="ow.r7d">Something at the home needs attention</small></span></label>
+        <label class="type"><input type="radio" name="request_type" value="HOA notice / information">
+          <span class="type__box"><svg viewBox="0 0 32 32"><rect x="5" y="8" width="22" height="16" rx="1"/><path d="M5 9l11 8 11-8"/></svg>
+          <strong data-i18n="ow.r3">HOA notice</strong><small data-i18n="ow.r3d">Forward a letter or notice from your HOA</small></span></label>
+        <label class="type"><input type="radio" name="request_type" value="Lease renewal / rent change">
+          <span class="type__box"><svg viewBox="0 0 32 32"><path d="M25 12a10 10 0 10.5 7"/><path d="M26 6v6h-6"/></svg>
+          <strong data-i18n="ow.r4">Lease renewal or rent change</strong><small data-i18n="ow.r4d">Renew, change rent, or end the lease term</small></span></label>
+        <label class="type"><input type="radio" name="request_type" value="Plan to sell or move in">
+          <span class="type__box"><svg viewBox="0 0 32 32"><path d="M5 15L16 6l11 9M8 13v13h16V13"/><path d="M14 26v-7h4v7"/></svg>
+          <strong data-i18n="ow.r5">Sell or move back in</strong><small data-i18n="ow.r5d">Plans that affect your current tenant</small></span></label>
+        <label class="type"><input type="radio" name="request_type" value="Update owner info">
+          <span class="type__box"><svg viewBox="0 0 32 32"><circle cx="16" cy="11" r="5"/><path d="M6 27c1.5-5 5.5-8 10-8s8.5 3 10 8"/></svg>
+          <strong data-i18n="ow.r6">Update my info</strong><small data-i18n="ow.r6d">New phone, email or payment details</small></span></label>
+        <label class="type"><input type="radio" name="request_type" value="Other">
+          <span class="type__box"><svg viewBox="0 0 32 32"><path d="M5 7h22v15H13l-6 5v-5H5z"/><path d="M11 13h10M11 17h6"/></svg>
+          <strong data-i18n="ow.r8">Something else</strong><small data-i18n="ow.r8d">Any other question or request</small></span></label>
+      </div>
+
+      <!-- STEP 2 + 3 -->
+      <div class="owner-body">
+        <div class="step-head"><b>2</b><div><h2 data-i18n="ow.s2">Your details</h2></div></div>
+        <div class="form__grid">
+          <div class="field"><label data-i18n-html="f.name">Full Name <i>*</i></label><input name="name" required autocomplete="name"></div>
+          <div class="field"><label data-i18n-html="f.phone">Phone <i>*</i></label><input name="phone" type="tel" required autocomplete="tel"></div>
+          <div class="field"><label data-i18n-html="f.email">Email <i>*</i></label><input name="email" type="email" required autocomplete="email"></div>
+          <div class="field"><label data-i18n-html="f.address">Property Address <i>*</i></label><input name="address" required autocomplete="street-address"></div>
+        </div>
+
+        <div class="step-head"><b>3</b><div><h2 id="ownerTypeTitle" data-i18n="ow.s3">Request details</h2><p id="ownerTypeHint" data-i18n="ow.s3p">Choose a request type above to begin.</p></div></div>
+        <div class="form__grid">
+          <!-- rent -->
+          <div class="field" data-show="Rent not received" hidden><label data-i18n-html="ow.month">Rent Month <i>*</i></label><input name="rent_month" type="month" required></div>
+          <div class="field" data-show="Rent not received" hidden><label data-i18n="ow.amount">Amount Expected</label><input name="amount_expected" inputmode="decimal" data-i18n-ph="ow.amountPh" placeholder="e.g. $4,200"></div>
+          <!-- quote -->
+          <div class="field" data-show="Repair quote approval" hidden><label data-i18n-html="ow.quote">Quote Number <i>*</i></label><input name="quote_number" required data-i18n-ph="ow.quotePh" placeholder="e.g. Q-1005"></div>
+          <div class="field" data-show="Repair quote approval" hidden><label data-i18n-html="ow.decision">Your Decision <i>*</i></label>
+            <div class="seg">
+              <label><input type="radio" name="decision" value="Approve" checked><span data-i18n="ow.d1">Approve</span></label>
+              <label><input type="radio" name="decision" value="Decline"><span data-i18n="ow.d2">Decline</span></label>
+              <label><input type="radio" name="decision" value="I have questions"><span data-i18n="ow.d3">I have questions</span></label>
+            </div></div>
+          <!-- issue -->
+          <div class="field field--full" data-show="Property issue" hidden><label data-i18n="ow.issueU">How urgent is it?</label>
+            <div class="seg">
+              <label><input type="radio" name="urgency" value="Normal" checked><span data-i18n="tn.u1">Normal — within a few days</span></label>
+              <label class="urgent"><input type="radio" name="urgency" value="Urgent"><span data-i18n="ow.urg">Urgent</span></label>
+            </div></div>
+          <!-- HOA -->
+          <div class="field" data-show="HOA notice / information" hidden><label data-i18n="ow.hoaDue">Response Deadline (if any)</label><input name="hoa_deadline" type="date"></div>
+          <p class="hint field--full" data-show="HOA notice / information" hidden data-i18n="ow.hoaHint">Please attach a photo or PDF of the HOA letter below.</p>
+          <!-- renewal -->
+          <div class="field field--full" data-show="Lease renewal / rent change" hidden><label data-i18n-html="ow.renew">What would you like? <i>*</i></label>
+            <div class="seg">
+              <label><input type="radio" name="renewal_choice" value="Renew, same rent" checked><span data-i18n="ow.rn1">Renew, same rent</span></label>
+              <label><input type="radio" name="renewal_choice" value="Renew, new rent"><span data-i18n="ow.rn2">Renew, new rent</span></label>
+              <label><input type="radio" name="renewal_choice" value="Do not renew"><span data-i18n="ow.rn3">Do not renew</span></label>
+              <label><input type="radio" name="renewal_choice" value="Need advice"><span data-i18n="ow.rn4">I'd like advice</span></label>
+            </div></div>
+          <div class="field" data-show="Lease renewal / rent change" hidden><label data-i18n="ow.newRent">New Rent (if changing)</label><input name="new_rent" inputmode="decimal" data-i18n-ph="ow.amountPh" placeholder="e.g. $4,200"></div>
+          <!-- sell / move in -->
+          <div class="field" data-show="Plan to sell or move in" hidden><label data-i18n="ow.when">Target Date</label><input name="target_date" type="date"></div>
+          <p class="hint field--full" data-show="Plan to sell or move in|Lease renewal / rent change" hidden data-i18n="ow.whenHint">Please tell us early. California rules on ending a tenancy may require advance notice and, in some cases, relocation help. We'll walk you through it.</p>
+          <!-- update info -->
+          <div class="field field--full" data-show="Update owner info" hidden><label data-i18n="tn.what">Select all that apply</label>
+            <div class="checks-grid">
+              <label class="check"><input type="checkbox" name="update_items" value="Phone"><span data-i18n="tn.i1">Phone</span></label>
+              <label class="check"><input type="checkbox" name="update_items" value="Email"><span data-i18n="tn.i2">Email</span></label>
+              <label class="check"><input type="checkbox" name="update_items" value="Mailing address"><span data-i18n="ow.u3">Mailing address</span></label>
+              <label class="check"><input type="checkbox" name="update_items" value="Rent payment method"><span data-i18n="ow.u4">How tenant pays me</span></label>
+              <label class="check"><input type="checkbox" name="update_items" value="Invoice / billing"><span data-i18n="ow.u5">Invoice / billing</span></label>
+              <label class="check"><input type="checkbox" name="update_items" value="Insurance"><span data-i18n="ow.u6">Insurance</span></label>
+            </div>
+            <p class="hint" data-i18n="ow.uHint">Please don't type full bank account numbers here. We'll contact you to update payment details safely.</p></div>
+
+          <!-- common -->
+          <div class="field field--full"><label data-i18n-html="ow.details">Details <i>*</i></label><textarea name="description" rows="4" required data-i18n-ph="ow.detailsPh" placeholder="Tell us what happened or what you need."></textarea></div>
+          <div class="field field--full"><label data-i18n="ow.files">Attachments (up to 3)</label>
+            <div class="drop">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 3H7a1 1 0 00-1 1v16a1 1 0 001 1h10a1 1 0 001-1V7z"/><path d="M14 3v4h4M9 13h6M9 17h6"/></svg>
+              <strong data-i18n="ow.drop">Tap to add photos or PDF files</strong>
+              <small data-i18n="ow.dropS">HOA letters, quotes, notices · up to 3 · PDF up to 5 MB</small>
+              <input type="file" name="attachments" accept="image/*,application/pdf" multiple data-max="3">
+            </div>
+            <div class="thumbs"></div>
+          </div>
+        </div>
+
+        <div class="form__foot">
+          <p class="form__note" data-i18n="tn.note">You'll get a confirmation email with a request number. Our team will reply by email or phone.</p>
+          <button type="submit" class="btn btn--solid"><span data-i18n="tn.btn">Submit Request</span> <span class="arrow">→</span></button>
+        </div>
+        <div class="form__msg" role="status"></div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ============ WORKING WITH US ============ -->
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="section-head"><div>
+      <p class="eyebrow reveal" data-i18n="ow.wEyebrow">Working With Us</p>
+      <h2 class="reveal reveal-d1" data-i18n-html="ow.wTitle">How we <em>work together</em></h2>
+    </div></div>
+    <div class="info-grid info-grid--4 reveal">
+      <div class="info"><span class="info__k">01</span><h3 data-i18n="ow.n1">Your rent goes to you</h3><p data-i18n="ow.n1p">Tenants pay rent and deposits directly to you. If rent has not arrived, tell us here and we'll follow up with the tenant.</p></div>
+      <div class="info"><span class="info__k">02</span><h3 data-i18n="ow.n2">You approve repairs</h3><p data-i18n="ow.n2p">We send you a quote with a number (for example Q-1005). Choose "Approve a repair quote" above and enter that number.</p></div>
+      <div class="info"><span class="info__k">03</span><h3 data-i18n="ow.n3">Management fee</h3><p data-i18n="ow.n3p">Our fee is invoiced to you separately each month. We never take it from your rent.</p></div>
+      <div class="info"><span class="info__k">04</span><h3 data-i18n="ow.n4">Response time</h3><p data-i18n="ow.n4p">We reply within 1 business day. Office hours: Mon–Fri, 11am–5pm.</p></div>
+    </div>
+    <div class="aside-cta reveal" style="display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;margin-top:40px">
+      <div><h3 data-i18n="ow.newT">Not our client yet?</h3><p style="margin:0" data-i18n="ow.newP">Get a free rental evaluation and a quote for Leasing Only or Full-Service.</p></div>
+      <a href="index.html#evaluation" class="btn btn--light"><span data-i18n="ow.newBtn">Free evaluation →</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <div class="footer__top">
+      <div>
+        <a href="index.html" class="brand"><span class="brand__name">BQ REALTY</span><span class="brand__sub">Bill Qin PM Team</span></a>
+        <p class="footer__tag" data-i18n="ft.tag">Caring for Bay Area homes, and the people who live in them.</p>
+      </div>
+      <div>
+        <h4 data-i18n="ft.contact">Contact</h4>
+        <a class="footer__big" href="tel:+16692358078">(669) 235-8078</a>
+        <ul><li><a href="mailto:pm.bqrealty@gmail.com">pm.bqrealty@gmail.com</a></li></ul>
+      </div>
+      <div>
+        <h4 data-i18n="ft.office">Office</h4>
+        <ul>
+          <li>1631 N First St #100<br>San Jose, CA 95112</li>
+          <li data-i18n="ft.hours">Mon – Fri · 11am – 5pm</li>
+          <li data-i18n="ft.appt">Office visits by appointment</li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="ft.area">Service Area</h4>
+        <ul>
+          <li data-i18n="ft.a1">South Bay</li><li data-i18n="ft.a2">Peninsula</li><li data-i18n="ft.a3">East Bay</li><li data-i18n="ft.a4">San Francisco</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__legal">
+        <span class="eho">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 14L16 4l13 10"/><path d="M7 12v16h18V12"/><path d="M11 17h10M11 22h10"/></svg>
+          <span data-i18n="ft.eho">Equal Housing Opportunity</span>
+        </span>
+        <span>Bill Qin DRE #01879849</span>
+        <span>BQ Realty DRE #01929787</span>
+      </div>
+      <div class="footer__legal">
+        <button class="textbtn" type="button" data-open="privacyModal" data-i18n="ft.privacy">Privacy Policy</button>
+        <span>© <span id="year">2026</span> BQ Realty</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ PRIVACY MODAL ============ -->
+<div class="modal" id="privacyModal" aria-hidden="true">
+  <div class="modal__bg" data-close></div>
+  <div class="modal__panel modal__text" role="dialog" aria-modal="true">
+    <button class="modal__close" type="button" data-close aria-label="Close">×</button>
+    <p class="eyebrow" data-i18n="pv.eyebrow">Privacy</p>
+    <h2 style="font-size:clamp(30px,4vw,40px);margin-bottom:20px" data-i18n="ft.privacy">Privacy Policy</h2>
+    <p data-i18n="pv.p1">We collect the information you submit through this website — such as your name, phone, email, property address, messages and photos — only to respond to your request and to provide our leasing and management services.</p>
+    <p data-i18n="pv.p2">We do not sell your information. It is shared only with the owner, tenant or service provider involved in your request, or when required by law.</p>
+    <p data-i18n="pv.p3">To ask about, update or delete your information, contact us at pm.bqrealty@gmail.com or (669) 235-8078.</p>
+  </div>
+</div>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bill Qin PM Team · BQ Realty — Bay Area Property Management</title>
+<meta name="description" content="Leasing and full-service property management for Bay Area homeowners. Bill Qin PM Team at BQ Realty — South Bay, Peninsula, East Bay and San Francisco.">
+<meta name="theme-color" content="#F7F5F0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231C1C1C'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='%23D4BC8E' text-anchor='middle' letter-spacing='2'%3EBQ%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="home">
+
+<!-- ============ HEADER ============ -->
+<header class="header header--static" id="header">
+  <div class="wrap header__inner">
+    <a href="index.html" class="brand" aria-label="BQ Realty home">
+      <span class="brand__name">BQ REALTY</span>
+      <span class="brand__sub">Bill Qin PM Team</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="index.html" class="is-active" data-i18n="nav.home">Home</a>
+      <a href="tenants.html" data-i18n="nav.tenants">Tenants</a>
+      <a href="owners.html" data-i18n="nav.owners">Owners</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" class="is-on"><span>EN</span></button>
+      <button type="button" data-lang="zh"><span>中文</span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ INTRO ============ -->
+<section class="intro">
+  <div class="wrap intro__grid">
+    <div class="intro__text">
+      <p class="eyebrow reveal" data-i18n="in.eyebrow">Property Management · Northern California</p>
+      <h1 class="reveal reveal-d1" data-i18n-html="in.title">Your home,<br><em>well looked after.</em></h1>
+      <p class="lead reveal reveal-d2" data-i18n="in.lead">Bill Qin PM Team leases and cares for homes across the Bay Area — with fast replies, clear communication, and rent that always goes directly to you.</p>
+    </div>
+    <div class="collage reveal reveal-d2" aria-hidden="true">
+      <figure class="collage__a"><img src="assets/img/leased/07.jpg" alt=""><figcaption><b>3</b><span data-i18n="in.days">days</span><small>Palo Alto</small></figcaption></figure>
+      <figure class="collage__b"><img src="assets/img/leased/02.jpg" alt=""></figure>
+      <figure class="collage__c"><img src="assets/img/leased/06.jpg" alt=""></figure>
+      <div class="collage__seal"><svg viewBox="0 0 100 100"><defs><path id="sealPath" d="M50 50m-37 0a37 37 0 1 1 74 0a37 37 0 1 1-74 0"/></defs><text><textPath href="#sealPath">BILL QIN PM TEAM · BQ REALTY · SAN JOSE ·</textPath></text></svg><span>BQ</span></div>
+    </div>
+  </div>
+
+  <!-- three clear paths -->
+  <div class="wrap">
+    <div class="paths reveal reveal-d3">
+      <a href="#rentals" class="path" id="pathRent">
+        <span class="path__n">01</span>
+        <span class="path__t" data-i18n="pa.rent">Find a rental</span>
+        <span class="path__d" data-i18n="pa.rentD">Browse available homes or tell us what you need</span>
+        <span class="path__go">→</span>
+      </a>
+      <a href="tenants.html" class="path">
+        <span class="path__n">02</span>
+        <span class="path__t" data-i18n="pa.tenant">I'm a tenant</span>
+        <span class="path__d" data-i18n="pa.tenantD">Repairs, move-out or renewal, update your info</span>
+        <span class="path__go">→</span>
+      </a>
+      <a href="owners.html" class="path path--dark">
+        <span class="path__n">03</span>
+        <span class="path__t" data-i18n="pa.owner">I'm a homeowner</span>
+        <span class="path__d" data-i18n="pa.ownerD">Owner requests, or a free rental evaluation</span>
+        <span class="path__go">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NUMBERS ============ -->
+<section class="numbers">
+  <div class="wrap numbers__row">
+    <div><strong id="statAvg">7</strong><span data-i18n="nu.avg">Average days to lease</span></div>
+    <div><strong id="statFast">3</strong><span data-i18n="nu.fast">Fastest lease, in days</span></div>
+    <div><strong>15+</strong><span data-i18n="nu.years">Years in Bay Area real estate</span></div>
+    <div><strong>5.0</strong><span data-i18n="nu.rating">Zillow rating · 60+ five-star reviews</span></div>
+  </div>
+</section>
+
+<!-- ============ AVAILABLE RENTALS (shows only when there are homes) ============ -->
+<section class="section" id="rentals" hidden>
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow" data-i18n="rent.eyebrow">Available Now</p>
+        <h2 data-i18n-html="rent.title">Homes for <em>lease</em></h2>
+      </div>
+    </div>
+    <div class="grid-listings" id="listingGrid"></div>
+  </div>
+</section>
+
+<!-- ============ RECENTLY LEASED ============ -->
+<section class="section" id="leased">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow reveal" data-i18n="ls.eyebrow">Recently Leased</p>
+        <h2 class="reveal reveal-d1" data-i18n-html="ls.title">Homes we've <em>placed</em></h2>
+        <p class="lead reveal reveal-d2" data-i18n="ls.lead">A few recent homes. Street addresses are kept private to protect owners and residents.</p>
+      </div>
+    </div>
+    <div class="leased-grid" id="leasedGrid"></div>
+    <div class="more-wrap"><button type="button" class="btn" id="leasedMore" hidden><span data-i18n="ls.more">View more homes</span> <span class="arrow">↓</span></button></div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section section--alt" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow reveal" data-i18n="svc.eyebrow">Our Services</p>
+        <h2 class="reveal reveal-d1" data-i18n-html="svc.title">Two ways to <em>work with us</em></h2>
+        <p class="lead reveal reveal-d2" data-i18n="svc.lead">Choose the level of help that fits your home and your time. Every plan is quoted by consultation.</p>
+      </div>
+    </div>
+
+    <div class="plans reveal">
+      <div class="plan">
+        <span class="plan__tag" data-i18n="svc.p1tag">Plan 01</span>
+        <h3 data-i18n="svc.p1">Leasing Only</h3>
+        <p data-i18n="svc.p1d">We find, screen and place a qualified tenant — then hand the keys back to you.</p>
+        <ul>
+          <li data-i18n="svc.p1a">Rent pricing &amp; market analysis</li>
+          <li data-i18n="svc.p1b">Professional listing page &amp; marketing</li>
+          <li data-i18n="svc.p1c">Showings &amp; applicant communication</li>
+          <li data-i18n="svc.p1d2">Tenant screening</li>
+          <li data-i18n="svc.p1e">Lease preparation &amp; signing</li>
+        </ul>
+        <div class="plan__price">
+          <span data-i18n="svc.quote">Pricing by consultation</span>
+          <a href="#evaluation" class="btn btn--sm"><span data-i18n="svc.cta">Get a Quote</span> <span class="arrow">→</span></a>
+        </div>
+      </div>
+      <div class="plan plan--featured">
+        <span class="plan__tag" data-i18n="svc.p2tag">Plan 02 · Most complete</span>
+        <h3 data-i18n="svc.p2">Full-Service Management</h3>
+        <p data-i18n="svc.p2d">We lease your home and take care of it, so you don't have to.</p>
+        <ul>
+          <li class="is-strong" data-i18n="svc.p2a">Everything in Leasing Only</li>
+          <li data-i18n="svc.p2b">Rent reminders &amp; follow-up</li>
+          <li data-i18n="svc.p2c">Maintenance coordination</li>
+          <li data-i18n="svc.p2d2">Move-in &amp; move-out inspections</li>
+          <li data-i18n="svc.p2e">Tenant communication &amp; owner updates</li>
+        </ul>
+        <div class="plan__price">
+          <span data-i18n="svc.quote">Pricing by consultation</span>
+          <a href="#evaluation" class="btn btn--sm"><span data-i18n="svc.cta">Get a Quote</span> <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="promise reveal">
+      <div class="promise__icon">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 18L20 7l14 11"/><path d="M10 15v18h20V15"/><path d="M16 24l3 3 6-6"/></svg>
+      </div>
+      <div>
+        <h3 data-i18n="svc.promT">Your rent goes directly to you.</h3>
+        <p data-i18n="svc.promP">Tenants pay rent and security deposits straight to the owner. We never hold your money. Our management fee is invoiced separately each month — simple and transparent.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FREE EVALUATION ============ -->
+<section class="section" id="evaluation">
+  <div class="wrap split">
+    <div class="split__aside">
+      <p class="eyebrow reveal" data-i18n="ev.eyebrow">For Homeowners</p>
+      <h2 class="reveal reveal-d1" data-i18n-html="ev.title">Get a free <em>rental evaluation</em></h2>
+      <p class="lead reveal reveal-d2" data-i18n="ev.lead">Tell us about your home. We'll reply with a rent estimate and the plan that fits you — no cost, no obligation.</p>
+      <ul class="checks reveal reveal-d3">
+        <li><b>01</b><span data-i18n="ev.c1">A rent estimate based on local market data</span></li>
+        <li><b>02</b><span data-i18n="ev.c2">Advice on preparing your home to lease faster</span></li>
+        <li><b>03</b><span data-i18n="ev.c3">A clear quote for Leasing Only or Full-Service</span></li>
+      </ul>
+    </div>
+
+    <form class="form reveal" data-form="evaluation" novalidate>
+      <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="form__grid">
+        <div class="field"><label data-i18n-html="f.name">Full Name <i>*</i></label><input name="name" required autocomplete="name"></div>
+        <div class="field"><label data-i18n-html="f.phone">Phone <i>*</i></label><input name="phone" type="tel" required autocomplete="tel"></div>
+        <div class="field field--full"><label data-i18n-html="f.email">Email <i>*</i></label><input name="email" type="email" required autocomplete="email"></div>
+        <div class="field field--full"><label data-i18n-html="f.address">Property Address <i>*</i></label><input name="address" required autocomplete="street-address"></div>
+        <div class="field"><label data-i18n="f.ptype">Property Type</label>
+          <select name="property_type">
+            <option value="Single Family" data-i18n="f.sfh">Single Family</option>
+            <option value="Townhouse" data-i18n="f.th">Townhouse</option>
+            <option value="Condo" data-i18n="f.condo">Condo</option>
+            <option value="Apartment / Multi-unit" data-i18n="f.apt">Apartment / Multi-unit</option>
+            <option value="Other" data-i18n="f.other">Other</option>
+          </select></div>
+        <div class="field"><label data-i18n="f.bedbath">Beds / Baths</label><input name="beds_baths" data-i18n-ph="f.bedbathPh" placeholder="e.g. 3 bd / 2 ba"></div>
+        <div class="field"><label data-i18n="f.plan">Interested In</label>
+          <select name="plan">
+            <option value="Not sure yet" data-i18n="f.notsure">Not sure yet</option>
+            <option value="Leasing Only" data-i18n="svc.p1">Leasing Only</option>
+            <option value="Full-Service Management" data-i18n="svc.p2">Full-Service Management</option>
+          </select></div>
+        <div class="field"><label data-i18n="f.avail">Available From</label><input name="available_date" type="date"></div>
+        <div class="field field--full"><label data-i18n="f.msg">Anything else?</label><textarea name="message" rows="3" data-i18n-ph="f.msgPh" placeholder="Current status, timeline, questions…"></textarea></div>
+      </div>
+      <div class="form__foot">
+        <p class="form__note" data-i18n="ev.note">Your address is kept private and used only for this evaluation.</p>
+        <button type="submit" class="btn btn--solid"><span data-i18n="ev.btn">Request Evaluation</span> <span class="arrow">→</span></button>
+      </div>
+      <div class="form__msg" role="status"></div>
+    </form>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section section--alt" id="about">
+  <div class="wrap about">
+    <div>
+      <p class="eyebrow reveal" data-i18n="ab.eyebrow">Meet the Team</p>
+      <blockquote class="about__quote reveal reveal-d1" data-i18n="ab.quote">A home is more than a place to live. We care for every home as if it were our own.</blockquote>
+      <div class="about__sign reveal reveal-d2">Bill Qin · BQ Realty</div>
+    </div>
+    <div class="about__body">
+      <h2 class="reveal" data-i18n-html="ab.title">Bill Qin &amp; the <em>PM Team</em></h2>
+      <p class="reveal reveal-d1" style="margin-top:28px" data-i18n="ab.p1">Bill Qin came to the U.S. 20 years ago and knows how important it is to find the right home — one that feels safe, warm and relaxing.</p>
+      <p class="reveal reveal-d2" data-i18n="ab.p2">With more than 15 years in Bay Area real estate, Bill and his team now help owners lease and care for their homes, with fast responses, clear communication and a reliable network of local service providers.</p>
+      <p class="reveal reveal-d3" data-i18n="ab.p3">Leasing, management and sales live under one roof — so owners who later want to sell, buy or invest work with the same team that already knows their home.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="section" id="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow reveal" data-i18n="rv.eyebrow">Client Reviews</p>
+        <h2 class="reveal reveal-d1" data-i18n-html="rv.title">What clients say about <em>Bill Qin</em></h2>
+      </div>
+      <div class="rating reveal">
+        <strong>5.0</strong>
+        <div><span class="rating__stars">★★★★★</span><span data-i18n="rv.count">60+ five-star reviews on Zillow</span></div>
+      </div>
+    </div>
+
+    <div class="review-grid" id="reviewGrid">
+      <article class="review"><div class="review__stars">★★★★★</div><blockquote>“Working with Bill was an absolute pleasure. I could reach him literally anytime of the day — no exaggeration — and he'd respond within five minutes. That level of dedication and responsiveness is unheard of.”</blockquote><footer><b>dts76</b>Oct 2025 · Willow Glen, San Jose</footer></article>
+      <article class="review"><div class="review__stars">★★★★★</div><blockquote>“We are remote sellers, Bill and his team handled the whole process professionally and friendly, from clearing the rooms (we had a lot of stuff left), remodeling, staging, professional photographing…”</blockquote><footer><b>tmfly3399</b>Jun 2021 · Milpitas</footer></article>
+      <article class="review"><div class="review__stars">★★★★★</div><blockquote>“All details throughout the entire process were taken care of meticulously. I had some items in the home's storage space, his team helped me remove them. He referred me to repair services, cleaning services, home inspection services…”</blockquote><footer><b>yun fei guo54</b>Jul 2024 · Sunnyvale</footer></article>
+      <article class="review"><div class="review__stars">★★★★★</div><blockquote>“Decent service, very professional. We rented our very first apartment with Bill Qin, he was responsive to our needs, and now he helped us buy a new apartment. He was truly awesome.”</blockquote><footer><b>Chia Long Lin</b>Dec 2020 · Newark</footer></article>
+      <article class="review"><div class="review__stars">★★★★★</div><blockquote>“Bill and his team are incredibly responsive and resourceful. Always put our interest as priority. Highly recommend their team and will definitely work with them again.”</blockquote><footer><b>wangsh86</b>Aug 2021 · North Valley, San Jose</footer></article>
+      <article class="review"><div class="review__stars">★★★★★</div><blockquote>“Bill and his team were absolutely fantastic… professional, efficient, and incredibly knowledgeable. Their expertise made everything smooth and stress-free, and they were always available to answer questions…”</blockquote><footer><b>Simon Tarn</b>Feb 2025 · Milpitas</footer></article>
+      <article class="review" data-extra><div class="review__stars">★★★★★</div><blockquote>“Bill is knowledgeable about the local market, responsive, and easy to communicate with throughout the entire process.”</blockquote><footer><b>YihengWang5</b>Aug 2026 · Sunnyvale</footer></article>
+      <article class="review" data-extra><div class="review__stars">★★★★★</div><blockquote>“Bill and his team demonstrated exceptional efficiency and expertise, completing the entire process in under a month (from staging to close). They handled every detail…”</blockquote><footer><b>MutianWang</b>Mar 2025 · North Valley, San Jose</footer></article>
+      <article class="review" data-extra><div class="review__stars">★★★★★</div><blockquote>“It has been great to work with Bill's team. Everyone was very nice and responded quickly to all of our communications.”</blockquote><footer><b>Jinmei Zhang</b>Aug 2021 · Walnut Creek</footer></article>
+      <article class="review" data-extra><div class="review__stars">★★★★★</div><blockquote>“They have done pretty good job to manage the whole process from pre-sell preparation, cleaning and repair, remodeling, listing and document processing. Team is easy to communicate and nice…”</blockquote><footer><b>shakeyevent</b>Jul 2021 · Dublin</footer></article>
+      <article class="review" data-extra><div class="review__stars">★★★★★</div><blockquote>“Bill and his team have done an extremely impressive job… They are very responsive, work day and night…”</blockquote><footer><b>jin16141</b>Aug 2026 · East Foothills, San Jose</footer></article>
+      <article class="review" data-extra><div class="review__stars">★★★★★</div><blockquote>“Bill is professional and responsive. The closing process had some difficulty at loan but Bill was able to successfully deal with it on my behalf.”</blockquote><footer><b>Tao Jiang</b>Aug 2025 · North Valley, San Jose</footer></article>
+    </div>
+    <div class="more-wrap"><button type="button" class="btn" id="reviewMore"><span data-i18n="rv.more">More reviews</span> <span class="arrow">↓</span></button></div>
+    <p class="reviews__src" data-i18n="rv.src">Reviews from Bill Qin's Zillow profile, shown in the clients' original words.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <div class="footer__top">
+      <div>
+        <a href="index.html" class="brand"><span class="brand__name">BQ REALTY</span><span class="brand__sub">Bill Qin PM Team</span></a>
+        <p class="footer__tag" data-i18n="ft.tag">Caring for Bay Area homes, and the people who live in them.</p>
+      </div>
+      <div>
+        <h4 data-i18n="ft.contact">Contact</h4>
+        <a class="footer__big" href="tel:+16692358078">(669) 235-8078</a>
+        <ul><li><a href="mailto:pm.bqrealty@gmail.com">pm.bqrealty@gmail.com</a></li></ul>
+      </div>
+      <div>
+        <h4 data-i18n="ft.office">Office</h4>
+        <ul>
+          <li>1631 N First St #100<br>San Jose, CA 95112</li>
+          <li data-i18n="ft.hours">Mon – Fri · 11am – 5pm</li>
+          <li data-i18n="ft.appt">Office visits by appointment</li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="ft.area">Service Area</h4>
+        <ul>
+          <li data-i18n="ft.a1">South Bay</li><li data-i18n="ft.a2">Peninsula</li><li data-i18n="ft.a3">East Bay</li><li data-i18n="ft.a4">San Francisco</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__legal">
+        <span class="eho">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 14L16 4l13 10"/><path d="M7 12v16h18V12"/><path d="M11 17h10M11 22h10"/></svg>
+          <span data-i18n="ft.eho">Equal Housing Opportunity</span>
+        </span>
+        <span>Bill Qin DRE #01879849</span>
+        <span>BQ Realty DRE #01929787</span>
+      </div>
+      <div class="footer__legal">
+        <button class="textbtn" type="button" data-open="privacyModal" data-i18n="ft.privacy">Privacy Policy</button>
+        <span>© <span id="year">2026</span> BQ Realty</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ INQUIRY MODAL ============ -->
+<div class="modal" id="inquiryModal" aria-hidden="true">
+  <div class="modal__bg" data-close></div>
+  <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="inqTitle">
+    <button class="modal__close" type="button" data-close aria-label="Close">×</button>
+    <p class="eyebrow" data-i18n="iq.eyebrow">Showing Inquiry</p>
+    <h2 id="inqTitle" style="font-size:clamp(32px,4vw,44px)" data-i18n="iq.title">Schedule a showing</h2>
+    <p class="modal__home" id="inqHome"></p>
+    <form class="form" data-form="showing" novalidate>
+      <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="hidden" name="listing_id">
+      <input type="hidden" name="listing_label">
+      <div class="form__grid">
+        <div class="field"><label data-i18n-html="f.name">Full Name <i>*</i></label><input name="name" required autocomplete="name"></div>
+        <div class="field"><label data-i18n-html="f.phone">Phone <i>*</i></label><input name="phone" type="tel" required autocomplete="tel"></div>
+        <div class="field field--full"><label data-i18n-html="f.email">Email <i>*</i></label><input name="email" type="email" required autocomplete="email"></div>
+        <div class="field"><label data-i18n="iq.movein">Move-in Date</label><input name="move_in" type="date"></div>
+        <div class="field"><label data-i18n="iq.people">Number of Occupants</label><input name="occupants" type="number" min="1" inputmode="numeric"></div>
+        <div class="field"><label data-i18n="iq.pets">Pets</label>
+          <select name="pets">
+            <option value="None" data-i18n="iq.none">None</option>
+            <option value="Cat" data-i18n="iq.cat">Cat</option>
+            <option value="Dog" data-i18n="iq.dog">Dog</option>
+            <option value="Other" data-i18n="f.other">Other</option>
+          </select></div>
+        <div class="field"><label data-i18n="iq.times">Preferred Showing Times</label><input name="showing_times" data-i18n-ph="iq.timesPh" placeholder="e.g. weekday evenings"></div>
+        <div class="field field--full"><label data-i18n="f.msg">Anything else?</label><textarea name="message" rows="3"></textarea></div>
+      </div>
+      <div class="form__foot">
+        <p class="form__note" data-i18n="iq.note">We usually reply within 1 business day.</p>
+        <button type="submit" class="btn btn--solid"><span data-i18n="iq.btn">Send Inquiry</span> <span class="arrow">→</span></button>
+      </div>
+      <div class="form__msg" role="status"></div>
+    </form>
+  </div>
+</div>
+
+<!-- ============ PRIVACY MODAL ============ -->
+<div class="modal" id="privacyModal" aria-hidden="true">
+  <div class="modal__bg" data-close></div>
+  <div class="modal__panel modal__text" role="dialog" aria-modal="true">
+    <button class="modal__close" type="button" data-close aria-label="Close">×</button>
+    <p class="eyebrow" data-i18n="pv.eyebrow">Privacy</p>
+    <h2 style="font-size:clamp(30px,4vw,40px);margin-bottom:20px" data-i18n="ft.privacy">Privacy Policy</h2>
+    <p data-i18n="pv.p1">We collect the information you submit through this website — such as your name, phone, email, property address, messages and photos — only to respond to your request and to provide our leasing and management services.</p>
+    <p data-i18n="pv.p2">We do not sell your information. It is shared only with the owner, tenant or service provider involved in your request, or when required by law.</p>
+    <p data-i18n="pv.p3">To ask about, update or delete your information, contact us at pm.bqrealty@gmail.com or (669) 235-8078.</p>
+  </div>
+</div>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

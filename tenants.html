@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tenant Center · Bill Qin PM Team · BQ Realty</title>
+<meta name="description" content="Submit a service request, move-out or renewal notice, update your information, or contact the Bill Qin PM Team at BQ Realty.">
+<meta name="theme-color" content="#1B1A17">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231C1C1C'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='%23D4BC8E' text-anchor='middle' letter-spacing='2'%3EBQ%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="header header--static" id="header">
+  <div class="wrap header__inner">
+    <a href="index.html" class="brand" aria-label="BQ Realty home">
+      <span class="brand__name">BQ REALTY</span>
+      <span class="brand__sub">Bill Qin PM Team</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="tenants.html" class="is-active" data-i18n="nav.tenants">Tenants</a>
+      <a href="owners.html" data-i18n="nav.owners">Owners</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" class="is-on"><span>EN</span></button>
+      <button type="button" data-lang="zh"><span>中文</span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html" data-i18n="cr.home">Home</a><span>/</span><span data-i18n="nav.tenants">Tenants</span></div>
+    <p class="eyebrow" data-i18n="tn.eyebrow">Tenant Center</p>
+    <h1 data-i18n-html="tn.title">How can we <em>help?</em></h1>
+    <p class="lead" data-i18n="tn.lead">Choose what you need, fill in one short form, and our team will get back to you — usually within 1 business day.</p>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="alert">
+    <div class="alert__icon">!</div>
+    <div>
+      <h3 data-i18n="tn.emT">In danger? Call 911 first.</h3>
+      <p data-i18n="tn.emP">Fire, smoke, gas smell or anyone at risk: leave the home and call 911. For a gas smell you can also call PG&amp;E at 1-800-743-5000. For an urgent home problem (water leak, no heat, lockout), submit an Urgent request and text us.</p>
+    </div>
+    <div class="alert__actions">
+      <button type="button" class="btn btn--sm btn--solid" data-urgent><span data-i18n="tn.emBtn1">Urgent Request</span></button>
+      <a href="sms:+16692358078" class="btn btn--sm"><span data-i18n="tn.emBtn2">Text Us</span></a>
+    </div>
+  </div>
+</div>
+
+<!-- what happens next -->
+<div class="wrap">
+  <ol class="flow">
+    <li><b>1</b><span data-i18n="tn.fl1">Choose a request and fill in the form</span></li>
+    <li><b>2</b><span data-i18n="tn.fl2">Get a confirmation email with your request number</span></li>
+    <li><b>3</b><span data-i18n="tn.fl3">Our team contacts you within 1 business day</span></li>
+  </ol>
+</div>
+
+<!-- ============ REQUEST WORKSPACE ============ -->
+<section class="section" style="padding-top:clamp(40px,5vw,64px)">
+  <div class="wrap workspace">
+    <div class="tabs" role="tablist" aria-label="Request type">
+      <button type="button" class="tab is-on" role="tab" data-tab="Service Request"><b>01</b><span data-i18n="tn.t1">Service Request</span><small data-i18n="tn.t1s">Repairs and maintenance</small></button>
+      <button type="button" class="tab" role="tab" data-tab="Move-out / Renewal"><b>02</b><span data-i18n="tn.t2">Move-out / Renewal</span><small data-i18n="tn.t2s">Notice to move out or renew</small></button>
+      <button type="button" class="tab" role="tab" data-tab="Update My Info"><b>03</b><span data-i18n="tn.t3">Update My Info</span><small data-i18n="tn.t3s">Phone, email, occupants, pets</small></button>
+      <button type="button" class="tab" role="tab" data-tab="Contact Us"><b>04</b><span data-i18n="tn.t4">Contact Us</span><small data-i18n="tn.t4s">Any other question</small></button>
+    </div>
+
+    <form class="form" data-form="tenant" novalidate>
+      <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="hidden" name="request_type" value="Service Request">
+
+      <div class="form__title">
+        <h2 id="formTitle" data-i18n="tn.t1">Service Request</h2>
+        <span data-i18n="tn.req">* Required</span>
+      </div>
+
+      <div class="form__grid">
+        <p class="form__group" data-i18n="tn.g1">Your details</p>
+        <div class="field"><label data-i18n-html="f.name">Full Name <i>*</i></label><input name="name" required autocomplete="name"></div>
+        <div class="field"><label data-i18n-html="f.phone">Phone <i>*</i></label><input name="phone" type="tel" required autocomplete="tel"></div>
+        <div class="field"><label data-i18n-html="f.email">Email <i>*</i></label><input name="email" type="email" required autocomplete="email"></div>
+        <div class="field"><label data-i18n-html="tn.unit">Unit # (if any)</label><input name="unit" autocomplete="address-line2"></div>
+        <div class="field field--full"><label data-i18n-html="tn.addr">Rental Property Address <i>*</i></label><input name="address" required autocomplete="street-address"></div>
+
+        <!-- 01 SERVICE REQUEST -->
+        <p class="form__group" data-show="Service Request" data-i18n="tn.g2">The problem</p>
+        <div class="field" data-show="Service Request"><label data-i18n-html="tn.cat">Problem Type <i>*</i></label>
+          <select name="category" required>
+            <option value="" data-i18n="tn.choose">Choose one…</option>
+            <option value="Plumbing" data-i18n="tn.c1">Plumbing (leak, clog, toilet)</option>
+            <option value="Electrical" data-i18n="tn.c2">Electrical (outlet, light, breaker)</option>
+            <option value="Appliance" data-i18n="tn.c3">Appliance</option>
+            <option value="Heating / AC / Water Heater" data-i18n="tn.c4">Heating / AC / Water heater</option>
+            <option value="Lock / Door / Window" data-i18n="tn.c5">Lock / Door / Window</option>
+            <option value="Roof / Ceiling / Wall" data-i18n="tn.c6">Roof / Ceiling / Wall</option>
+            <option value="Pest" data-i18n="tn.c7">Pest</option>
+            <option value="Garage / Yard" data-i18n="tn.c8">Garage / Yard</option>
+            <option value="Other" data-i18n="f.other">Other</option>
+          </select></div>
+        <div class="field" data-show="Service Request"><label data-i18n="tn.loc">Location in Home</label><input name="location" data-i18n-ph="tn.locPh" placeholder="e.g. master bathroom"></div>
+        <div class="field field--full" data-show="Service Request"><label data-i18n-html="tn.urg">How urgent is it? <i>*</i></label>
+          <div class="seg">
+            <label><input type="radio" name="urgency" value="Normal" checked><span data-i18n="tn.u1">Normal — within a few days</span></label>
+            <label class="urgent"><input type="radio" name="urgency" value="Urgent"><span data-i18n="tn.u2">Urgent — affects safety or daily living</span></label>
+          </div>
+          <p class="hint hint--warn" id="urgentHint" hidden data-i18n="tn.uHint">For urgent issues, please also text us at (669) 235-8078 after you submit, so we see it right away.</p>
+        </div>
+        <div class="field field--full" data-show="Service Request"><label data-i18n-html="tn.desc">Describe the problem <i>*</i></label><textarea name="description" rows="4" required data-i18n-ph="tn.descPh" placeholder="What is happening, when did it start, and anything you have already tried."></textarea></div>
+        <div class="field field--full" data-show="Service Request"><label data-i18n="tn.photos">Photos (up to 3)</label>
+          <div class="drop">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="6" width="18" height="14" rx="1"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg>
+            <strong data-i18n="tn.drop">Tap to take or choose photos</strong>
+            <small data-i18n="tn.dropS">Photos only · up to 3 · large photos are resized automatically</small>
+            <input type="file" name="photos" accept="image/*" multiple data-max="3">
+          </div>
+          <div class="thumbs"></div>
+        </div>
+        <div class="field field--full" data-show="Service Request"><label data-i18n="tn.times">Best times for a visit</label><input name="available_times" data-i18n-ph="tn.timesPh" placeholder="e.g. weekdays after 3pm, Saturday morning"></div>
+        <div class="field field--full" data-show="Service Request">
+          <label class="check"><input type="checkbox" name="permission_to_enter" value="Yes"><span data-i18n="tn.perm">If I'm not home, I give permission for the repair person to enter (with notice).</span></label>
+          <label class="check"><input type="checkbox" name="pets_in_home" value="Yes"><span data-i18n="tn.pets">There are pets in the home.</span></label>
+        </div>
+
+        <!-- 02 MOVE-OUT / RENEWAL -->
+        <p class="form__group" data-show="Move-out / Renewal" hidden data-i18n="tn.g3">Your plan</p>
+        <div class="field field--full" data-show="Move-out / Renewal" hidden><label data-i18n-html="tn.plan">I would like to <i>*</i></label>
+          <div class="seg">
+            <label><input type="radio" name="plan" value="Move out" checked><span data-i18n="tn.p1">Move out</span></label>
+            <label><input type="radio" name="plan" value="Renew lease"><span data-i18n="tn.p2">Renew my lease</span></label>
+            <label><input type="radio" name="plan" value="Not sure yet"><span data-i18n="f.notsure">Not sure yet</span></label>
+          </div></div>
+        <div class="field" data-show="Move-out / Renewal" hidden><label data-i18n-html="tn.date">Planned Date <i>*</i></label><input name="planned_date" type="date" required></div>
+        <div class="field" data-show="Move-out / Renewal" data-plan="Move out" hidden><label data-i18n="tn.fwd">Forwarding Address</label><input name="forwarding_address" data-i18n-ph="tn.fwdPh" placeholder="For your deposit statement"></div>
+        <div class="field field--full" data-show="Move-out / Renewal" data-plan="Move out" hidden>
+          <label class="check"><input type="checkbox" name="pre_move_out_inspection" value="Requested"><span data-i18n="tn.pre">I'd like a pre-move-out inspection, so I can fix any issues before I leave.</span></label>
+          <p class="hint" data-i18n="tn.preHint">Under California law you may request this inspection. It is usually done about 2 weeks before move-out.</p>
+        </div>
+        <div class="field field--full" data-show="Move-out / Renewal" hidden><label data-i18n="f.msg">Anything else?</label><textarea name="notes" rows="3"></textarea></div>
+
+        <!-- 03 UPDATE MY INFO -->
+        <p class="form__group" data-show="Update My Info" hidden data-i18n="tn.g4">What changed?</p>
+        <div class="field field--full" data-show="Update My Info" hidden><label data-i18n="tn.what">Select all that apply</label>
+          <div class="checks-grid">
+            <label class="check"><input type="checkbox" name="update_items" value="Phone"><span data-i18n="tn.i1">Phone</span></label>
+            <label class="check"><input type="checkbox" name="update_items" value="Email"><span data-i18n="tn.i2">Email</span></label>
+            <label class="check"><input type="checkbox" name="update_items" value="Occupants"><span data-i18n="tn.i3">Occupants</span></label>
+            <label class="check"><input type="checkbox" name="update_items" value="Vehicles"><span data-i18n="tn.i4">Vehicles</span></label>
+            <label class="check"><input type="checkbox" name="update_items" value="Pets"><span data-i18n="tn.i5">Pets</span></label>
+            <label class="check"><input type="checkbox" name="update_items" value="Emergency contact"><span data-i18n="tn.i6">Emergency contact</span></label>
+          </div></div>
+        <div class="field field--full" data-show="Update My Info" hidden><label data-i18n-html="tn.newinfo">New information <i>*</i></label><textarea name="new_info" rows="4" required data-i18n-ph="tn.newinfoPh" placeholder="Please write the new details here."></textarea>
+          <p class="hint" data-i18n="tn.newinfoHint">Adding a person or pet may need owner approval under your lease. We'll contact you if anything else is needed.</p></div>
+
+        <!-- 04 CONTACT US -->
+        <p class="form__group" data-show="Contact Us" hidden data-i18n="tn.g5">Your message</p>
+        <div class="field field--full" data-show="Contact Us" hidden><label data-i18n="tn.subj">Subject</label><input name="subject" data-i18n-ph="tn.subjPh" placeholder="e.g. noise, HOA, parking, lease question"></div>
+        <div class="field field--full" data-show="Contact Us" hidden><label data-i18n-html="tn.message">Message <i>*</i></label><textarea name="message" rows="5" required></textarea></div>
+      </div>
+
+      <div class="form__foot">
+        <p class="form__note" data-i18n="tn.note">You'll get a confirmation email with a request number. Our team will reply by email or phone.</p>
+        <button type="submit" class="btn btn--solid"><span data-i18n="tn.btn">Submit Request</span> <span class="arrow">→</span></button>
+      </div>
+      <div class="form__msg" role="status"></div>
+    </form>
+  </div>
+</section>
+
+<!-- ============ GOOD TO KNOW ============ -->
+<section class="section section--alt" style="padding-top:clamp(72px,9vw,120px)">
+  <div class="wrap">
+    <div class="section-head"><div>
+      <p class="eyebrow reveal" data-i18n="tn.kEyebrow">Good to Know</p>
+      <h2 class="reveal reveal-d1" data-i18n-html="tn.kTitle">Living in your <em>home</em></h2>
+    </div></div>
+    <div class="info-grid reveal">
+      <div class="info"><span class="info__k">01</span><h3 data-i18n="tn.k1">Response time</h3><p data-i18n="tn.k1p">Non-emergency requests are answered within 1 business day. Office hours are Mon–Fri, 11am–5pm.</p></div>
+      <div class="info"><span class="info__k">02</span><h3 data-i18n="tn.k2">Paying rent</h3><p data-i18n="tn.k2p">Please pay rent directly to your owner, using the method in your lease. We do not collect rent. Questions? Contact us.</p></div>
+      <div class="info"><span class="info__k">03</span><h3 data-i18n="tn.k3">Entry notice</h3><p data-i18n="tn.k3p">When a repair needs someone to enter your home, we will give you at least 24 hours' written notice, except in an emergency.</p></div>
+      <div class="info"><span class="info__k">04</span><h3 data-i18n="tn.k4">Moving out</h3><p data-i18n="tn.k4p">Give written notice as your lease requires. Clean the home, return all keys and remotes, and share a forwarding address.</p></div>
+      <div class="info"><span class="info__k">05</span><h3 data-i18n="tn.k5">Security deposit</h3><p data-i18n="tn.k5p">Your deposit is held by your owner. After move-out, it is returned with an itemized statement of any deductions within 21 days, as California law requires.</p></div>
+      <div class="info"><span class="info__k">06</span><h3 data-i18n="tn.k6">Renter's insurance</h3><p data-i18n="tn.k6p">The owner's insurance does not cover your belongings. We recommend renter's insurance, and many leases require it.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section">
+  <div class="wrap split">
+    <div class="split__aside">
+      <p class="eyebrow reveal" data-i18n="tn.fEyebrow">Quick Fixes</p>
+      <h2 class="reveal reveal-d1" data-i18n-html="tn.fTitle">Try this <em>first</em></h2>
+      <p class="lead reveal reveal-d2" data-i18n="tn.fLead">Many small problems can be solved in a minute. If these steps don't work, send us a service request.</p>
+    </div>
+    <div class="faq reveal">
+      <details><summary data-i18n="tn.q1">Part of my home has no power</summary><p data-i18n="tn.a1">Check the electrical panel for a breaker in the middle or "off" position. Push it fully off, then back on. In kitchens, bathrooms and outdoors, also press "Reset" on the GFCI outlet (the one with two small buttons).</p></details>
+      <details><summary data-i18n="tn.q2">My garbage disposal hums but doesn't turn</summary><p data-i18n="tn.a2">Turn it off. Press the small red reset button on the bottom of the unit. If it is still stuck, use the hex key in the slot at the bottom center to turn it back and forth. Never put your hand inside.</p></details>
+      <details><summary data-i18n="tn.q3">The toilet is clogged or keeps running</summary><p data-i18n="tn.a3">For a clog, use a plunger with steady pushes. If water is rising, turn the valve behind the toilet clockwise to stop it. For a running toilet, check that the chain inside the tank is not tangled and the flapper closes.</p></details>
+      <details><summary data-i18n="tn.q4">There is no hot water</summary><p data-i18n="tn.a4">For a gas water heater, check that the pilot light is on and follow the relight steps on the label. For an electric one, check the breaker. If you smell gas, leave the home and call the gas company and 911.</p></details>
+      <details><summary data-i18n="tn.q5">The smoke alarm keeps chirping</summary><p data-i18n="tn.a5">A short chirp every minute usually means a low battery. Replace the battery and press the test button. Never remove an alarm without replacing it — working alarms are required.</p></details>
+      <details><summary data-i18n="tn.q6">The heater or AC is not working</summary><p data-i18n="tn.a6">Check that the thermostat is set to Heat or Cool and has fresh batteries. Check the breaker, and make sure the air filter is not blocked. If it still doesn't work, send a request.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <div class="footer__top">
+      <div>
+        <a href="index.html" class="brand"><span class="brand__name">BQ REALTY</span><span class="brand__sub">Bill Qin PM Team</span></a>
+        <p class="footer__tag" data-i18n="ft.tag">Caring for Bay Area homes, and the people who live in them.</p>
+      </div>
+      <div>
+        <h4 data-i18n="ft.contact">Contact</h4>
+        <a class="footer__big" href="tel:+16692358078">(669) 235-8078</a>
+        <ul><li><a href="mailto:pm.bqrealty@gmail.com">pm.bqrealty@gmail.com</a></li></ul>
+      </div>
+      <div>
+        <h4 data-i18n="ft.office">Office</h4>
+        <ul>
+          <li>1631 N First St #100<br>San Jose, CA 95112</li>
+          <li data-i18n="ft.hours">Mon – Fri · 11am – 5pm</li>
+          <li data-i18n="ft.appt">Office visits by appointment</li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="ft.area">Service Area</h4>
+        <ul>
+          <li data-i18n="ft.a1">South Bay</li><li data-i18n="ft.a2">Peninsula</li><li data-i18n="ft.a3">East Bay</li><li data-i18n="ft.a4">San Francisco</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__legal">
+        <span class="eho">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 14L16 4l13 10"/><path d="M7 12v16h18V12"/><path d="M11 17h10M11 22h10"/></svg>
+          <span data-i18n="ft.eho">Equal Housing Opportunity</span>
+        </span>
+        <span>Bill Qin DRE #01879849</span>
+        <span>BQ Realty DRE #01929787</span>
+      </div>
+      <div class="footer__legal">
+        <button class="textbtn" type="button" data-open="privacyModal" data-i18n="ft.privacy">Privacy Policy</button>
+        <span>© <span id="year">2026</span> BQ Realty</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ PRIVACY MODAL ============ -->
+<div class="modal" id="privacyModal" aria-hidden="true">
+  <div class="modal__bg" data-close></div>
+  <div class="modal__panel modal__text" role="dialog" aria-modal="true">
+    <button class="modal__close" type="button" data-close aria-label="Close">×</button>
+    <p class="eyebrow" data-i18n="pv.eyebrow">Privacy</p>
+    <h2 style="font-size:clamp(30px,4vw,40px);margin-bottom:20px" data-i18n="ft.privacy">Privacy Policy</h2>
+    <p data-i18n="pv.p1">We collect the information you submit through this website — such as your name, phone, email, property address, messages and photos — only to respond to your request and to provide our leasing and management services.</p>
+    <p data-i18n="pv.p2">We do not sell your information. It is shared only with the owner, tenant or service provider involved in your request, or when required by law.</p>
+    <p data-i18n="pv.p3">To ask about, update or delete your information, contact us at pm.bqrealty@gmail.com or (669) 235-8078.</p>
+  </div>
+</div>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

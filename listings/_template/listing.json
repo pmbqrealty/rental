@@ -1,0 +1,14 @@
+{
+  "title": "Modern Family Home",
+  "city": "San Jose",
+  "type": "Single Family",
+  "beds": 4,
+  "baths": 2.5,
+  "sqft": 2150,
+  "rent": 5200,
+  "available": "Nov 1",
+  "photo": "cover.jpg",
+  "status": "available",
+  "days_to_lease": "",
+  "leased_date": ""
+}
