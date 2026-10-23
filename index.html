@@ -12,7 +12,7 @@
 <body class="home">
 
 <!-- ============ HEADER ============ -->
-<header class="header header--static" id="header">
+<header class="header" id="header">
   <div class="wrap header__inner">
     <a href="index.html" class="brand" aria-label="BQ Realty home">
       <span class="brand__name">BQ REALTY</span>
@@ -32,25 +32,26 @@
 
 <main>
 
-<!-- ============ INTRO ============ -->
-<section class="intro">
-  <div class="wrap intro__grid">
-    <div class="intro__text">
-      <p class="eyebrow reveal" data-i18n="in.eyebrow">Property Management · Northern California</p>
-      <h1 class="reveal reveal-d1" data-i18n-html="in.title">Your home,<br><em>well looked after.</em></h1>
-      <p class="lead reveal reveal-d2" data-i18n="in.lead">Bill Qin PM Team leases and cares for homes across the Bay Area — with fast replies, clear communication, and rent that always goes directly to you.</p>
-    </div>
-    <div class="collage reveal reveal-d2" aria-hidden="true">
-      <figure class="collage__a"><img src="assets/img/leased/07.jpg" alt=""><figcaption><b>3</b><span data-i18n="in.days">days</span><small>Palo Alto</small></figcaption></figure>
-      <figure class="collage__b"><img src="assets/img/leased/02.jpg" alt=""></figure>
-      <figure class="collage__c"><img src="assets/img/leased/06.jpg" alt=""></figure>
-      <div class="collage__seal"><svg viewBox="0 0 100 100"><defs><path id="sealPath" d="M50 50m-37 0a37 37 0 1 1 74 0a37 37 0 1 1-74 0"/></defs><text><textPath href="#sealPath">BILL QIN PM TEAM · BQ REALTY · SAN JOSE ·</textPath></text></svg><span>BQ</span></div>
-    </div>
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero__media">
+    <picture>
+      <source media="(max-width: 700px)" srcset="assets/img/hero-sm.jpg">
+      <img src="assets/img/hero.jpg" alt="" fetchpriority="high">
+    </picture>
   </div>
+  <div class="wrap hero__inner">
+    <p class="eyebrow reveal" data-i18n="in.eyebrow">Property Management · Northern California</p>
+    <h1 class="reveal reveal-d1" data-i18n-html="in.title">Your home,<br><em>well looked after.</em></h1>
+    <p class="hero__lead reveal reveal-d2" data-i18n="in.lead">Bill Qin PM Team leases and cares for homes across the Bay Area — with fast replies, clear communication, and rent that always goes directly to you.</p>
+  </div>
+  <a href="#paths" class="hero__scroll" aria-label="Scroll down"><span></span></a>
+</section>
 
-  <!-- three clear paths -->
+<!-- ============ THREE PATHS ============ -->
+<section class="paths-band" id="paths">
   <div class="wrap">
-    <div class="paths reveal reveal-d3">
+    <div class="paths reveal">
       <a href="#rentals" class="path" id="pathRent">
         <span class="path__n">01</span>
         <span class="path__t" data-i18n="pa.rent">Find a rental</span>
